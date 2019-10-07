@@ -1,35 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>todos web-site</title>
-    </head>
-    <body>
-        <header class="todos-header">
-            <span style="color:#CCCCCC; font-family: 'Roboto', sans-serif;
-                        font-size: 100px; font-style: normal">todos</span>
-        </header>
-        <div class="todos-node">
-            <div class="todos-node-title">
-                <input type="text" name="todos-node-title-input"
-                 placeholder="What we need to do?" style="text-align: center">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>todos web-site</title>
+</head>
+
+<body>
+<div class="todos">
+    <header class="todos-header">
+        <h1 class="title">todos</h1>
+    </header>
+
+    <main class="todos__node">
+
+        <section class="todos__main-controls main-controls">
+            <div class="main-controls__select-all">
+                <!-- TODO throw text away -->
+                <button class="main-controls__select-all-button">Select all tasks</button>
             </div>
-            <div class="todos-node-list">
-                <ul class="todos-node-list-container" style="list-style: none;">
-                  <li><input name="todos-node-list-container-entry" type="checkbox">HTML</li>
-                  <li><input name="todos-node-list-container-entry" type="checkbox">CSS</li>
-                  <li><input name="todos-node-list-container-entry" type="checkbox">JS</li>
-                </ul>
+            <div class="main-controls__create-new">
+                <input aria-label="Add new item" autofocus="autofocus"
+                       name="main-controls__create-new-input" placeholder="What we need to do?" type="text">
             </div>
-           <div class="todos-node-action-bar">
-              <span class="todos-node-action-bar-items-left">3 items left</span>
-              <span class="todos-node-action-bar-buttons">
-                <button name="todos-node-action-bar-buttons-all">All</button>
-                <button name="todos-node-action-bar-buttons-active">Active</button>
-                <button name="todos-node-action-bar-buttons-completed">Completed</button>
-                <button name="todos-node-action-bar-buttons-clear-completed">Clear completed</button>
-              </span>
-           </div>
-        </div>
-    </body>
+        </section>
+
+        <section class="todos__tasks">
+            <ul class="todos__task-list tasks">
+                <li class="todos__task-item task-item">
+                    <div class="task-item__view">
+                        <input aria-label="Completed task: HTML" class="task-item__status" type="checkbox" />
+                        <span class="task-item__text">HTML</span>
+                        <button class="task-item__delete">Delete Task</button>
+                    </div>
+                    <div class="task-item__edit" hidden="hidden">
+                        <input aria-label="Edit task: HTML" class="task-item__input" type="text" value="HTML" />
+                    </div>
+                </li>
+
+                <li class="todos__task-item task-item">
+                    <div class="task-item__view">
+                        <input aria-label="Completed task: CSS" checked="checked" class="task-item__status" type="checkbox" />
+                        <span class="task-item__text">CSS</span>
+                        <button class="task-item__delete">Delete Task</button>
+                    </div>
+                    <div class="task-item__edit" hidden="hidden">
+                        <input aria-label="Edit task: CSS" class="task-item__input" type="text" value="CSS" />
+                    </div>
+                </li>
+
+                <li class="todos__task-item task-item">
+                    <div class="task-item__view">
+                        <input aria-label="Completed task: JS tools" class="task-item__status" type="checkbox" />
+                        <span class="task-item__text">JS tools</span>
+                        <button class="task-item__delete">Delete Task</button>
+                    </div>
+                    <div class="task-item__edit" hidden="hidden">
+                        <input aria-label="Edit task: JS tools" class="task-item__input" type="text" value="JS tools" />
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="todos__action-bar action-bar">
+            <div class="action-bar__item">
+                <div class="task-counter">3 items left</div>
+            </div>
+
+            <div class="action-bar__item">
+                <div aria-label="Filter tasks by status" class="task-filter" role="group">
+                    <label class="task-filter__item">
+                        <input checked="checked" class="task-filter__input" name="filter" type="radio" value="All" />
+                        <span aria-label="Select all tasks" class="task-filter__text">All</span>
+                    </label>
+                    <label class="task-filter__item">
+                        <input class="task-filter__input" name="filter" type="radio" value="Active" />
+                        <span aria-label="Select active tasks" class="task-filter__text">Active</span>
+                    </label>
+                    <label class="task-filter__item">
+                        <input checked="checked" class="task-filter__input" name="filter" type="radio" value="Completed" />
+                        <span aria-label="Select completed tasks" class="task-filter__text">Completed</span>
+                    </label>
+                </div>
+            </div>
+            <div class="action-bar__item">
+                <button class="task-clear-completed">Clear completed</button>
+            </div>
+        </section>
+
+    </main>
+</div>
+</body>
+
 </html>
