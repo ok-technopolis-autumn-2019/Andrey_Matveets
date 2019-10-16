@@ -31,7 +31,7 @@
             background: none;
         }
 
-        input::placeholder {
+        .main-controls__create-new-input::placeholder {
             color: #c4baba;
             width: 100%;
             font-size: xx-large;
