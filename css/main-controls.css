@@ -1,0 +1,42 @@
+.main-controls {
+    padding: 16px 18px 17px;
+    border: 1px lightgray solid;
+    background-color: white;
+}
+    .main-controls__select-all {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        float: left;
+        margin: 8px 0 0;
+        overflow: hidden;
+    }
+        .main-controls__select-all-button {
+            text-indent: -9999px;
+            display: inline-block;
+            border: none;
+            background: url("../icons/select-all.png") no-repeat;
+        }
+
+    .main-controls__create-new {
+        overflow: hidden;
+        padding-left: 18px;
+    }
+        .main-controls__create-new-input {
+            color: #666;
+            width: 100%;
+            font-size: xx-large;
+            flex-grow: 40;
+            border: none;
+            background: none;
+        }
+
+        input::placeholder {
+            color: #c4baba;
+            width: 100%;
+            font-size: xx-large;
+            flex-grow: 40;
+            border: none;
+            background: none;
+            font-style: italic;
+        }

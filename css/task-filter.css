@@ -1,0 +1,26 @@
+.task-filter {
+    overflow: hidden;
+    display: inline-block;
+    list-style: none;
+}
+    .task-filter__item {
+        display: inline-block;
+        border: none;
+        background: none;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #888888;
+        font-size: medium;
+        margin-right: 5px;
+    }
+
+        .task-filter__input {
+            visibility:hidden;
+        }
+
+        .task-filter__text {
+            cursor: pointer;
+        }
+
+        .task-filter__input:checked + .task-filter__text {
+            border: solid lightgray 1px;
+        }

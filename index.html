@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>todos web-site</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -16,12 +17,11 @@
 
         <section class="todos__main-controls main-controls">
             <div class="main-controls__select-all">
-                <!-- TODO throw text away -->
                 <button class="main-controls__select-all-button">Select all tasks</button>
             </div>
             <div class="main-controls__create-new">
                 <input aria-label="Add new item" autofocus="autofocus"
-                       name="main-controls__create-new-input" placeholder="What we need to do?" type="text">
+                       class="main-controls__create-new-input" placeholder="What we need to do?" type="text">
             </div>
         </section>
 
@@ -82,8 +82,6 @@
                         <span aria-label="Select completed tasks" class="task-filter__text">Completed</span>
                     </label>
                 </div>
-            </div>
-            <div class="action-bar__item">
                 <button class="task-clear-completed">Clear completed</button>
             </div>
         </section>

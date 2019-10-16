@@ -1,0 +1,20 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex: auto;
+}
+    .todos__node {
+        border: 1px solid gray;
+        margin: 0 auto;
+        clear: both;
+        background: white;
+    }

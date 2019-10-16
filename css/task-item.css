@@ -1,0 +1,50 @@
+.todos__task-item {
+    align-items: center;
+    border-bottom: 1px lightgray solid;
+    padding: 14px 12px;
+    position: relative;
+    clear: both;
+}
+    .task-item__status {
+        float: left;
+        overflow: auto;
+        display: inline-block;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+        appearance: none;
+        -webkit-appearance: none;
+        border: 1px gray solid;
+        border-radius: 100px;
+    }
+        /* Я думаю тут нужно было применить только для класса status, но у меня не получилось :( */
+        input[type="checkbox"]:checked {
+            background: url("../icons/completed.png") no-repeat center;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 35px;
+            height: 35px;
+            border: 1px green solid;
+            border-radius: 100px;
+        }
+
+    .task-item__text {
+        color: #666;
+        font-size: xx-large;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        flex-grow: 40;
+        border: 0;
+        background: none;
+    }
+
+    .task-item__delete {
+        text-indent: -9999px;
+        float: right;
+        overflow: auto;
+        display: inline-block;
+        background: url("../icons/close.png") no-repeat center;
+        margin: 10px;
+        width: 24px;
+        height: 24px;
+        border: none;
+    }

@@ -1,0 +1,7 @@
+.todos__tasks {
+    background-color: white;
+}
+    .todos__task-list {
+        list-style-type: none;
+        clear: both;
+    }
