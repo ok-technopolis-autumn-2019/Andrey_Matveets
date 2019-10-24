@@ -1,6 +1,6 @@
 .main-controls {
     padding: 16px 18px 17px;
-    border: 1px lightgray solid;
+    box-shadow: inset 0 -1px #E6E6E6;
     background-color: white;
 }
     .main-controls__select-all {
