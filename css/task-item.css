@@ -30,7 +30,6 @@
     .task-item__text {
         color: #666;
         font-size: xx-large;
-        font-family: 'Helvetica Neue', Arial, sans-serif;
         flex-grow: 40;
         border: 0;
         background: none;
