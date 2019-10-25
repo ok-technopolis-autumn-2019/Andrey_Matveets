@@ -17,8 +17,9 @@
 
         .task-filter__text {
             cursor: pointer;
+            border: solid transparent 1px;
         }
 
         .task-filter__input:checked + .task-filter__text {
-            border: solid lightgray 1px;
+            border-color: #EBDFDF;
         }
