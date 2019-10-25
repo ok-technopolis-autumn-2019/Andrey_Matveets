@@ -1,5 +1,6 @@
 .todos__tasks {
     background-color: white;
+    min-height: 253px;
 }
     .todos__task-list {
         list-style-type: none;
