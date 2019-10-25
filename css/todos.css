@@ -1,12 +1,9 @@
 .todos {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex: auto;
+    margin: auto;
+    max-width: 560px;
+    min-width: 460px;
 }
     .todos__node {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
