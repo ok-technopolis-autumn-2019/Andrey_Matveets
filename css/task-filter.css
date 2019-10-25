@@ -1,6 +1,5 @@
 .task-filter {
     display: inline-block;
-    list-style: none;
 }
     .task-filter__item {
         display: inline-block;
@@ -12,7 +11,8 @@
     }
 
         .task-filter__input {
-            visibility:hidden;
+            position: absolute;
+            left: -9999px;
         }
 
         .task-filter__text {
