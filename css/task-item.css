@@ -15,25 +15,22 @@
             height: 35px;
             appearance: none;
             -webkit-appearance: none;
-            border: 1px gray solid;
-            border-radius: 100px;
+            border: 1px #E6E6E6 solid;
+            border-radius: 50%;
         }
 
         .task-item__status:checked {
             background: url("../icons/completed.png") no-repeat center;
             appearance: none;
             -webkit-appearance: none;
-            width: 35px;
-            height: 35px;
-            border: 1px green solid;
-            border-radius: 100px;
+            border-color: #5DC2AF;
         }
 
         .task-item__text {
             display: flex;
             flex-grow: 1;
             word-break: break-word;
-            font-size: xx-large;
+            font-size: 24px;
             border: 0;
             background: none;
         }
