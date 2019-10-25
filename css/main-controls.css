@@ -1,6 +1,7 @@
 .main-controls {
     box-shadow: inset 0 -1px #E6E6E6;
     background-color: white;
+    width: 562px;
 }
     .main-controls__select-all {
         float: left;
@@ -22,6 +23,9 @@
             min-height: 66px;
             width: 100%;
             font-size: 24px;
+            box-sizing: border-box;
+            padding-left: 4px;
+            padding-right: 4px;
             border: none;
             background: none;
         }
