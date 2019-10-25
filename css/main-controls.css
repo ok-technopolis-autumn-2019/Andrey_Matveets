@@ -21,13 +21,13 @@
             color: #666;
             min-height: 66px;
             width: 100%;
-            font-size: xx-large;
+            font-size: 24px;
             border: none;
             background: none;
         }
 
         .main-controls__create-new-input::placeholder {
-            color: #c4baba;
+            color: #CCCCCC;
             width: 100%;
             font-size: xx-large;
             border: none;
