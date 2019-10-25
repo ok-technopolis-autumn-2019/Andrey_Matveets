@@ -3,9 +3,7 @@
     background-color: white;
 }
     .main-controls__select-all {
-        position: relative;
         float: left;
-        overflow: hidden;
     }
         .main-controls__select-all-button {
             min-width: 58px;
@@ -24,7 +22,6 @@
             min-height: 66px;
             width: 100%;
             font-size: xx-large;
-            flex-grow: 40;
             border: none;
             background: none;
         }
@@ -33,7 +30,6 @@
             color: #c4baba;
             width: 100%;
             font-size: xx-large;
-            flex-grow: 40;
             border: none;
             background: none;
             font-style: italic;
