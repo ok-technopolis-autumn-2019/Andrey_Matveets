@@ -28,9 +28,5 @@
 
         .main-controls__create-new-input::placeholder {
             color: #CCCCCC;
-            width: 100%;
-            font-size: xx-large;
-            border: none;
-            background: none;
             font-style: italic;
         }
