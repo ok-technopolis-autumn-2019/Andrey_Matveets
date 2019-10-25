@@ -1,4 +1,5 @@
 .task-counter {
     display: inline-block;
     background: none;
+    word-break: break-word;
 }
