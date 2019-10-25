@@ -2,6 +2,10 @@
     box-shadow: inset 0 -1px #E6E6E6;
     clear: both;
 }
+    .todos__task-item:hover {
+        background-color: #FAFAFA;
+    }
+
     .task-item__view {
         min-height: 64px;
         padding: 0 4px 0 12px;
@@ -20,12 +24,12 @@
             border-radius: 50%;
         }
 
-        .task-item__status:checked {
-            background: url("../icons/completed.png") no-repeat center;
-            appearance: none;
-            -webkit-appearance: none;
-            border-color: #5DC2AF;
-        }
+            .task-item__status:checked {
+                background: url("../icons/completed.png") no-repeat center;
+                appearance: none;
+                -webkit-appearance: none;
+                border-color: #5DC2AF;
+            }
 
         .task-item__text {
             display: flex;
