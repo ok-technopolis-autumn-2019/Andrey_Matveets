@@ -3,15 +3,22 @@
     padding: 14px 12px;
     clear: both;
 }
-    .task-item__status {
-        margin-right: 10px;
-        width: 35px;
-        height: 35px;
-        appearance: none;
-        -webkit-appearance: none;
-        border: 1px gray solid;
-        border-radius: 100px;
+    .task-item__view {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
     }
+        .task-item__status {
+            flex-shrink: 0;
+            margin-right: 10px;
+            width: 35px;
+            height: 35px;
+            appearance: none;
+            -webkit-appearance: none;
+            border: 1px gray solid;
+            border-radius: 100px;
+        }
+
         .task-item__status:checked {
             background: url("../icons/completed.png") no-repeat center;
             appearance: none;
@@ -22,18 +29,21 @@
             border-radius: 100px;
         }
 
-    .task-item__text {
-        color: #666;
-        font-size: xx-large;
-        border: 0;
-        background: none;
-    }
+        .task-item__text {
+            display: flex;
+            flex-grow: 1;
+            word-break: break-word;
+            color: #666;
+            font-size: xx-large;
+            border: 0;
+            background: none;
+        }
 
-    .task-item__delete {
-        text-indent: -9999px;
-        background: url("../icons/close.png") no-repeat center;
-        margin: 10px;
-        width: 24px;
-        height: 24px;
-        border: none;
-    }
+        .task-item__delete {
+            text-indent: -9999px;
+            background: url("../icons/close.png") no-repeat center;
+            margin: 10px;
+            width: 24px;
+            height: 24px;
+            border: none;
+        }
