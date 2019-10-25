@@ -43,4 +43,11 @@
             width: 36px;
             height: 36px;
             border: none;
+            margin: -9999px 4px 0 12px;
         }
+            .task-item__view:hover .task-item__delete {
+                margin-top: 0;
+            }
+            .task-item__delete:focus {
+                margin-top: 0;
+            }
