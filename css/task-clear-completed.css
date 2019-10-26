@@ -1,0 +1,8 @@
+.task-clear-completed {
+    display: inline-block;
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #888888;
+    padding: 8px 0;
+}

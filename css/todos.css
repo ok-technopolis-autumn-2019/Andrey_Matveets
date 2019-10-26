@@ -1,0 +1,13 @@
+.todos {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 560px;
+    min-width: 460px;
+}
+    .todos__node {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        clear: both;
+        background: white;
+    }
