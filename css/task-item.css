@@ -25,7 +25,7 @@
         }
 
             .task-item__status:checked {
-                background: url("../icons/completed.png") no-repeat center;
+                background: url("../icons/completed.svg") no-repeat center;
                 appearance: none;
                 -webkit-appearance: none;
                 border-color: #5DC2AF;
@@ -43,7 +43,7 @@
 
         .task-item__delete {
             text-indent: -9999px;
-            background: url("../icons/close.png") no-repeat center;
+            background: url("../icons/close.svg") no-repeat center;
             width: 36px;
             height: 36px;
             border: none;
