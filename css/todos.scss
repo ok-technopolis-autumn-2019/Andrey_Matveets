@@ -1,3 +1,5 @@
+@import "variables/vars";
+
 .todos {
     display: flex;
     flex-direction: column;
@@ -11,27 +13,27 @@
         content: " ";
         position: absolute;
         top: 100%;
-        height: 5px;
-        left: 2px;
-        right: 2px;
+        height: $spacing_shadow_height_5;
+        left: $spacing_tiny_2;
+        right: $spacing_tiny_2;
         z-index: -1;
-        background-color: #FFFFFF;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: $color_bg;
+        box-shadow: 0 $spacing_tiny_2 $spacing_small_4 rgba(0, 0, 0, 0.2);
     }
     .todos:after {
         content: " ";
         position: absolute;
         top: 100%;
-        height: 10px;
-        left: 4px;
-        right: 4px;
+        height: $spacing_shadow_height_10;
+        left: $spacing_small_4;
+        right: $spacing_small_4;
         z-index: -2;
-        background-color: #FFFFFF;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: $color_bg;
+        box-shadow: 0 $spacing_tiny_2 $spacing_small_4 rgba(0, 0, 0, 0.2);
     }
         .todos__node {
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 $spacing_tiny_2 $spacing_small_4 rgba(0, 0, 0, 0.2);
             margin: 0 auto;
             clear: both;
-            background: white;
+            background: $color_bg;
         }

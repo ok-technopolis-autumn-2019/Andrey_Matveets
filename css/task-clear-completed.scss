@@ -1,8 +1,10 @@
+@import "variables/vars";
+
 .task-clear-completed {
     display: inline-block;
     border: none;
     background: none;
-    font-size: 14px;
-    color: #888888;
-    padding: 8px 0;
+    font-size: $font_small_14;
+    color: $color_secondary_text;
+    padding: $spacing_normal_8 0;
 }

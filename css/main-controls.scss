@@ -1,6 +1,8 @@
+@import "variables/vars";
+
 .main-controls {
-    box-shadow: inset 0 -1px #E6E6E6;
-    background-color: white;
+    box-shadow: inset 0 $spacing_divider_bottom_1 $color_divider;
+    background-color: $color_bg;
     width: 562px;
 }
     .main-controls__select-all {
@@ -9,7 +11,7 @@
         .main-controls__select-all-button {
             min-width: 58px;
             min-height: 66px;
-            text-indent: -9999px;
+            text-indent: $spacing_invisible;
             display: inline-block;
             border: none;
             background: url("../icons/select-all.svg") no-repeat 17px 26px;
@@ -19,18 +21,18 @@
         display: flow-root;
     }
         .main-controls__create-new-input {
-            color: #666;
+            color: $color_primary_text;
             min-height: 66px;
             width: 100%;
-            font-size: 24px;
+            font-size: $font_normal_24;
             box-sizing: border-box;
-            padding-left: 4px;
-            padding-right: 4px;
+            padding-left: $spacing_small_4;
+            padding-right: $spacing_small_4;
             border: none;
             background: none;
         }
 
         .main-controls__create-new-input::placeholder {
-            color: #CCCCCC;
+            color: $color_placeholder_text;
             font-style: italic;
         }

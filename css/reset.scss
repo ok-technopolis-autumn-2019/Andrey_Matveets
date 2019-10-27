@@ -1,3 +1,5 @@
+@import "variables/vars";
+
 body,
 div,
 h1,
@@ -7,7 +9,7 @@ input,
 button {
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $font_family
 }
 
 ul {
@@ -17,10 +19,10 @@ ul {
 textarea,
 input,
 select {
-    font-size: 14px;
+    font-size: $font_small_14;
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #666;
+    background-color: $color_gray_whitesmoke;
+    color: $color_primary_text;
 }
