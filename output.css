@@ -1,0 +1,251 @@
+body,
+div,
+h1,
+ul,
+li,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea,
+input,
+select {
+  font-size: 14px;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 12px;
+  align-items: center;
+  box-shadow: inset 0 1px #E6E6E6;
+  color: #888888;
+  font-size: 14px;
+}
+
+.main-controls {
+  box-shadow: inset 0 -1px #E6E6E6;
+  background-color: white;
+  width: 562px;
+}
+
+.main-controls__select-all {
+  float: left;
+}
+
+.main-controls__select-all-button {
+  min-width: 58px;
+  min-height: 66px;
+  text-indent: -9999px;
+  display: inline-block;
+  border: none;
+  background: url("icons/select-all.svg") no-repeat 17px 26px;
+}
+
+.main-controls__create-new {
+  display: flow-root;
+}
+
+.main-controls__create-new-input {
+  color: #666;
+  min-height: 66px;
+  width: 100%;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: none;
+  background: none;
+}
+
+.main-controls__create-new-input::placeholder {
+  color: #CCCCCC;
+  font-style: italic;
+}
+
+.task-clear-completed {
+  display: inline-block;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #888888;
+  padding: 8px 0;
+}
+
+.task-counter {
+  display: inline-block;
+  background: none;
+  word-break: break-word;
+}
+
+.task-filter {
+  display: inline-block;
+}
+
+.task-filter__item {
+  display: inline-block;
+  border: none;
+  background: none;
+  margin-right: 5px;
+}
+
+.task-filter__input {
+  position: absolute;
+  left: -9999px;
+}
+
+.task-filter__text {
+  cursor: pointer;
+  padding: 2px 6px;
+  border: solid transparent 1px;
+}
+
+.task-filter__input:checked + .task-filter__text {
+  border-color: #EBDFDF;
+}
+
+.todos__task-item {
+  box-shadow: inset 0 -1px #E6E6E6;
+  clear: both;
+}
+
+.todos__task-item:hover {
+  background-color: #FAFAFA;
+}
+
+.task-item__view {
+  min-height: 64px;
+  padding: 0 4px 0 12px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.task-item__status {
+  flex-shrink: 0;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px #E6E6E6 solid;
+  border-radius: 50%;
+}
+
+.task-item__status:checked {
+  background: url("icons/completed.svg") no-repeat center;
+  appearance: none;
+  -webkit-appearance: none;
+  border-color: #5DC2AF;
+}
+
+.task-item__text {
+  display: flex;
+  flex-grow: 1;
+  word-break: break-word;
+  font-size: 24px;
+  padding: 12px 0;
+  border: 0;
+  background: none;
+}
+
+.task-item__delete {
+  text-indent: -9999px;
+  background: url("icons/close.svg") no-repeat center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  margin: -9999px 4px 0 12px;
+}
+
+.task-item__view:hover .task-item__delete {
+  margin-top: 0;
+}
+
+.task-item__delete:focus {
+  margin-top: 0;
+}
+
+.todos__tasks {
+  background-color: white;
+  min-height: 253px;
+}
+
+.todos__task-list {
+  list-style-type: none;
+  clear: both;
+}
+
+.todos-header {
+  text-align: center;
+  color: #CCCCCC;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 200;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 560px;
+  min-width: 460px;
+  position: relative;
+}
+
+.todos:before {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  height: 5px;
+  left: 2px;
+  right: 2px;
+  z-index: -1;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.todos:after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  height: 10px;
+  left: 4px;
+  right: 4px;
+  z-index: -2;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.todos__node {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  clear: both;
+  background: white;
+}
+
+.todos-header {
+  text-align: center;
+  color: #CCCCCC;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=output.css.map */
