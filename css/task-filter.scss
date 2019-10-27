@@ -19,6 +19,7 @@
             cursor: pointer;
             padding: $spacing_tiny_2 $spacing_normal_8;
             border: solid $color_invisible $border_size_1;
+            border-radius: 3px;
         }
 
         .task-filter__input:checked + .task-filter__text {

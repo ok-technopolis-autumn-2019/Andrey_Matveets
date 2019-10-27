@@ -110,6 +110,7 @@ body {
   cursor: pointer;
   padding: 2px 8px;
   border: solid transparent 1px;
+  border-radius: 3px;
 }
 
 .task-filter__input:checked + .task-filter__text {
