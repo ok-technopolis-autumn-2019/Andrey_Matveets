@@ -1,4 +1,5 @@
 @import "variables/vars";
+@import "mixins";
 
 .todos__task-item {
     box-shadow: inset 0 $spacing_divider_bottom_1 $color_divider;
@@ -16,36 +17,32 @@
         align-items: center;
     }
         .task-item__status {
+            @include appearance;
+            @include border($color_divider, 50%);
             flex-shrink: 0;
             margin-right: $spacing_checkbox_10;
             width: 35px;
             height: 35px;
-            appearance: none;
-            -webkit-appearance: none;
-            border: $border_size_1 $color_divider solid;
-            border-radius: 50%;
         }
 
             .task-item__status:checked {
-                background: url("../icons/completed.svg") no-repeat center;
-                appearance: none;
-                -webkit-appearance: none;
+                @include appearance;
+                @include backgroundImage("../icons/completed.svg");
                 border-color: $color_checkbox_checked;
             }
 
         .task-item__text {
+            @include break_word;
             display: flex;
             flex-grow: 1;
-            word-break: break-word;
             font-size: $font_normal_24;
             padding: $spacing_large_12 0;
             border: 0;
-            background: none;
         }
 
         .task-item__delete {
+            @include backgroundImage("../icons/close.svg");
             text-indent: $spacing_invisible;
-            background: url("../icons/close.svg") no-repeat center;
             width: 36px;
             height: 36px;
             border: none;

@@ -1,12 +1,12 @@
 @import "variables/vars";
+@import "mixins";
 
 .task-filter {
     display: inline-block;
 }
     .task-filter__item {
+        @include no_background;
         display: inline-block;
-        border: none;
-        background: none;
         margin-right: $spacing_filter_items_5;
     }
 
@@ -16,10 +16,9 @@
         }
 
         .task-filter__text {
+            @include border($color_invisible, 3px);
             cursor: pointer;
             padding: $spacing_tiny_2 $spacing_normal_8;
-            border: solid $color_invisible $border_size_1;
-            border-radius: 3px;
         }
 
         .task-filter__input:checked + .task-filter__text {

@@ -1,4 +1,5 @@
 @import "variables/vars";
+@import "mixins";
 
 .todos {
     display: flex;
@@ -10,30 +11,15 @@
 }
 
     .todos:before {
-        content: " ";
-        position: absolute;
-        top: 100%;
-        height: $spacing_shadow_height_5;
-        left: $spacing_tiny_2;
-        right: $spacing_tiny_2;
-        z-index: -1;
-        background-color: $color_bg;
-        box-shadow: 0 $spacing_tiny_2 $spacing_small_4 rgba(0, 0, 0, 0.2);
+        @include shadow_sheets;
+        @include todos_sheets($spacing_shadow_height_5, $spacing_tiny_2, -1);
     }
     .todos:after {
-        content: " ";
-        position: absolute;
-        top: 100%;
-        height: $spacing_shadow_height_10;
-        left: $spacing_small_4;
-        right: $spacing_small_4;
-        z-index: -2;
-        background-color: $color_bg;
-        box-shadow: 0 $spacing_tiny_2 $spacing_small_4 rgba(0, 0, 0, 0.2);
+        @include shadow_sheets;
+        @include todos_sheets($spacing_shadow_height_10, $spacing_small_4, -2);
     }
         .todos__node {
-            box-shadow: 0 $spacing_tiny_2 $spacing_small_4 rgba(0, 0, 0, 0.2);
+            @include shadow_sheets;
             margin: 0 auto;
             clear: both;
-            background: $color_bg;
         }

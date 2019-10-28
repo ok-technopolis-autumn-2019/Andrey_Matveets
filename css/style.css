@@ -59,6 +59,8 @@ body {
 }
 
 .main-controls__create-new-input {
+  border: none;
+  background: none;
   color: #666;
   min-height: 66px;
   width: 100%;
@@ -66,8 +68,6 @@ body {
   box-sizing: border-box;
   padding-left: 4px;
   padding-right: 4px;
-  border: none;
-  background: none;
 }
 
 .main-controls__create-new-input::placeholder {
@@ -76,18 +76,18 @@ body {
 }
 
 .task-clear-completed {
-  display: inline-block;
   border: none;
   background: none;
+  display: inline-block;
   font-size: 14px;
   color: #888;
   padding: 8px 0;
 }
 
 .task-counter {
-  display: inline-block;
   background: none;
   word-break: break-word;
+  display: inline-block;
 }
 
 .task-filter {
@@ -95,9 +95,9 @@ body {
 }
 
 .task-filter__item {
-  display: inline-block;
   border: none;
   background: none;
+  display: inline-block;
   margin-right: 5px;
 }
 
@@ -107,10 +107,10 @@ body {
 }
 
 .task-filter__text {
-  cursor: pointer;
-  padding: 2px 8px;
   border: solid transparent 1px;
   border-radius: 3px;
+  cursor: pointer;
+  padding: 2px 8px;
 }
 
 .task-filter__input:checked + .task-filter__text {
@@ -135,36 +135,36 @@ body {
 }
 
 .task-item__status {
+  appearance: none;
+  -webkit-appearance: none;
+  border: solid #e6e6e6 1px;
+  border-radius: 50%;
   flex-shrink: 0;
   margin-right: 10px;
   width: 35px;
   height: 35px;
-  appearance: none;
-  -webkit-appearance: none;
-  border: 1px #e6e6e6 solid;
-  border-radius: 50%;
 }
 
 .task-item__status:checked {
-  background: url("../icons/completed.svg") no-repeat center;
   appearance: none;
   -webkit-appearance: none;
+  background: transparent url("../icons/completed.svg") no-repeat center;
   border-color: #5DC2AF;
 }
 
 .task-item__text {
+  background: none;
+  word-break: break-word;
   display: flex;
   flex-grow: 1;
-  word-break: break-word;
   font-size: 24px;
   padding: 12px 0;
   border: 0;
-  background: none;
 }
 
 .task-item__delete {
+  background: transparent url("../icons/close.svg") no-repeat center;
   text-indent: -9999px;
-  background: url("../icons/close.svg") no-repeat center;
   width: 36px;
   height: 36px;
   border: none;
@@ -209,6 +209,8 @@ body {
 }
 
 .todos:before {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   content: " ";
   position: absolute;
   top: 100%;
@@ -216,11 +218,11 @@ body {
   left: 2px;
   right: 2px;
   z-index: -1;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .todos:after {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   content: " ";
   position: absolute;
   top: 100%;
@@ -228,15 +230,13 @@ body {
   left: 4px;
   right: 4px;
   z-index: -2;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .todos__node {
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   clear: both;
-  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,8 @@
 @import "variables/vars";
+@import "mixins";
 
 .main-controls {
-    box-shadow: inset 0 $spacing_divider_bottom_1 $color_divider;
-    background-color: $color_bg;
+    @include shadow_divider;
     width: 562px;
 }
     .main-controls__select-all {
@@ -21,6 +21,7 @@
         display: flow-root;
     }
         .main-controls__create-new-input {
+            @include no_background;
             color: $color_primary_text;
             min-height: 66px;
             width: 100%;
@@ -28,8 +29,6 @@
             box-sizing: border-box;
             padding-left: $spacing_small_4;
             padding-right: $spacing_small_4;
-            border: none;
-            background: none;
         }
 
         .main-controls__create-new-input::placeholder {
