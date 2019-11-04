@@ -1,5 +1,7 @@
+@import "variables/vars";
+
 .todos__tasks {
-    background-color: white;
+    background-color: $color_bg;
     min-height: 253px;
 }
     .todos__task-list {

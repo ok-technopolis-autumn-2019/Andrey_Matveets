@@ -1,0 +1,25 @@
+@import "variables/vars";
+@import "mixins";
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 560px;
+    min-width: 460px;
+    position: relative;
+}
+
+    .todos:before {
+        @include shadow_sheets;
+        @include todos_sheets($spacing_shadow_height_5, $spacing_tiny_2, -1);
+    }
+    .todos:after {
+        @include shadow_sheets;
+        @include todos_sheets($spacing_shadow_height_10, $spacing_small_4, -2);
+    }
+        .todos__node {
+            @include shadow_sheets;
+            margin: 0 auto;
+            clear: both;
+        }

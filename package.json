@@ -1,0 +1,19 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "Frontend Technopolis task",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-autumn-2019/Andrey_Matveets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-autumn-2019/Andrey_Matveets/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-autumn-2019/Andrey_Matveets#readme"
+}

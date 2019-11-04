@@ -1,0 +1,45 @@
+@import "variables/vars";
+
+@mixin shadow_divider {
+  box-shadow: inset 0 $spacing_divider_bottom_1 $color_divider;
+  background-color: $color_bg;
+}
+
+@mixin shadow_sheets {
+  background-color: $color_bg;
+  box-shadow: 0 $spacing_tiny_2 $spacing_small_4 rgba(0, 0, 0, 0.2);
+}
+
+@mixin appearance {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+@mixin backgroundImage($url) {
+  background: $color_invisible url($url) no-repeat center;
+}
+
+@mixin todos_sheets($height, $offset, $z-index) {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  height: $height;
+  left: $offset;
+  right: $offset;
+  z-index: $z-index;
+}
+
+@mixin border($color, $radius) {
+  border: solid $color $border_size_1;
+  border-radius: $radius;
+}
+
+@mixin no_background {
+  border: none;
+  background: none;
+}
+
+@mixin break_word {
+  background: none;
+  word-break: break-word;
+}

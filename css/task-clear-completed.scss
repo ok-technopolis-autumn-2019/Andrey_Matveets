@@ -1,0 +1,10 @@
+@import "variables/vars";
+@import "mixins";
+
+.task-clear-completed {
+    @include no_background;
+    display: inline-block;
+    font-size: $font_small_14;
+    color: $color_secondary_text;
+    padding: $spacing_normal_8 0;
+}

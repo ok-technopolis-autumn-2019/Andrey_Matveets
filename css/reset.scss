@@ -1,0 +1,28 @@
+@import "variables/vars";
+
+body,
+div,
+h1,
+ul,
+li,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: $font_family
+}
+
+ul {
+    list-style: none;
+}
+
+textarea,
+input,
+select {
+    font-size: $font_small_14;
+}
+
+body {
+    background-color: $color_gray_whitesmoke;
+    color: $color_primary_text;
+}

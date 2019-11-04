@@ -1,0 +1,10 @@
+@import "variables/vars";
+
+.todos-header {
+    text-align: center;
+    color: $color_title_text;
+}
+    .title {
+        font-size: $font_large_100;
+        font-weight: 200;
+    }

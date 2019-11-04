@@ -1,0 +1,6 @@
+@import "mixins"
+;
+.task-counter {
+    @include break_word;
+    display: inline-block;
+}

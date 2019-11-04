@@ -1,0 +1,56 @@
+@import "variables/vars";
+@import "mixins";
+
+.todos__task-item {
+    box-shadow: inset 0 $spacing_divider_bottom_1 $color_divider;
+    clear: both;
+}
+    .todos__task-item:hover {
+        background-color: $color_hover;
+    }
+
+    .task-item__view {
+        min-height: 64px;
+        padding: 0 $spacing_small_4 0 $spacing_large_12;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+        .task-item__status {
+            @include appearance;
+            @include border($color_divider, 50%);
+            flex-shrink: 0;
+            margin-right: $spacing_checkbox_10;
+            width: 35px;
+            height: 35px;
+        }
+
+            .task-item__status:checked {
+                @include appearance;
+                @include backgroundImage("../icons/completed.svg");
+                border-color: $color_checkbox_checked;
+            }
+
+        .task-item__text {
+            @include break_word;
+            display: flex;
+            flex-grow: 1;
+            font-size: $font_normal_24;
+            padding: $spacing_large_12 0;
+            border: 0;
+        }
+
+        .task-item__delete {
+            @include backgroundImage("../icons/close.svg");
+            text-indent: $spacing_invisible;
+            width: 36px;
+            height: 36px;
+            border: none;
+            margin: $spacing_invisible $spacing_small_4 0 $spacing_large_12;
+        }
+            .task-item__view:hover .task-item__delete {
+                margin-top: 0;
+            }
+            .task-item__delete:focus {
+                margin-top: 0;
+            }
